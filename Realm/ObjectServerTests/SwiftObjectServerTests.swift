@@ -2958,7 +2958,6 @@ class CombineObjectServerTests: SwiftSyncTestCase {
 }
 
 #if swift(>=5.5)
-
 @available(macOS 12.0, *)
 class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
     func testAsyncOpenStandalone() async throws {
