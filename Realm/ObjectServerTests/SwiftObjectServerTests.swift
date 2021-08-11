@@ -2269,7 +2269,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
         }
     }
 
-    func testEmailPasswordProviderClient() async throws {
+    func testCallResetPasswordAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
@@ -2282,7 +2282,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
         }
     }
 
-    func testAppLinkUser() async throws {
+    func testAppLinkUserAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
@@ -2298,7 +2298,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
     }
 
     // MARK: - Objective-C async await
-    func testPushRegistration() async throws {
+    func testPushRegistrationAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
@@ -2311,7 +2311,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
         XCTAssertTrue(true)
     }
 
-    func test() async throws {
+    func testEmailPasswordProviderClientAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
@@ -2341,7 +2341,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
         }
     }
 
-    func testUserAPIKeyProviderClient() async throws {
+    func testUserAPIKeyProviderClientAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
@@ -2367,7 +2367,7 @@ class AsyncAwaitObjectServerTests: SwiftSyncTestCase {
         XCTAssertEqual(newFetchedApiKeys.count, 0)
     }
 
-    func testCustomUserData() async throws {
+    func testCustomUserDataAsyncAwait() async throws {
         let email = "realm_tests_do_autoverify\(randomString(7))@\(randomString(7)).com"
         let password = randomString(10)
         try await app.emailPasswordAuth.registerUser(email: email, password: password)
